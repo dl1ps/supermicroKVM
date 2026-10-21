@@ -1,0 +1,35 @@
+# Copy to servers.toml and fill in. Prefer: chmod 600 servers.toml
+
+[defaults]
+port = 5900
+user = "ADMIN"
+password = "ADMIN"
+remote_layout = "de"
+fps = 2.0
+low_color = true
+low_bandwidth = true
+toolbar = "left"
+brighten = 1.35
+contrast = 1.2
+verbose = true
+bandwidth_stats = true   # console RX/TX lines; false or --no-bandwidth-stats to mute
+cad_hotkey = false       # F8 → CAD; default off — use toolbar CAD
+sysrq_toolbar = false    # Magic SysRq menu; default off — enable with --sysrq
+snap_toolbar = true      # Snap → clipboard; hide with --no-snap / false
+view_mode = "fit"        # fit | native (1:1 + scrollbars); toggle with F10
+view_toggle_toolbar = false  # show Fit/1:1 button; default off — use F10
+fkey_passthrough = false     # start with F8–F11 → remote; toggle via toolbar F→R
+
+[[servers]]
+name = "example-bmc"
+host = "192.168.0.100"
+user = "ADMIN"
+password = "ADMIN"
+note = "optional label"
+
+# Per-server overrides are optional; omitted keys inherit [defaults].
+# [[servers]]
+# name = "other"
+# host = "10.0.0.5"
+# password = "secret"
+# remote_layout = "us"

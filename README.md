@@ -30,6 +30,9 @@ The current version implements:
 - a platform independent implementation of the aten KVM protocol as it is used on old supermicro boards (tested X10, but some newer and older models will also work for sure) 
 - a gui which does not change its window size when there are events on your server (resolution change, power-off, reboot etc). 
 - in i3 desktop environment gui sticks to the selected i3 virtual desktop and stays there
+- f10 to toggle fit to screen (default) or 1:1 (using side-scroll-bars if it not fits to screen)
+- f11 full screen toggle
+- pass through mode of all keys (also f-keys used to control client) when clicking on the color stripe on top of the toolbar
 - toolbar with shortcuts
     - cad macro (ctrl+alt+del) for reboots
     - magic systems request key macro (linux kernel reisub for safe hard reboots)
@@ -43,7 +46,7 @@ The current version implements:
 - bandwidth control - shows statistics bandwidth wich is currently used and counts transferred bytes
 - quality control - it is possible to reduce the bandwith which is necessary for operation to a minimum (unfortunately even if all savings are utilized those old devices are still consuming more than modern protocols would do)
 - descriptive debug messages
-- sync of led keys (server is set to the value of the local keys) - no caps lock bug!
+- sync of led keys (server is set to the value of the local keys on start or when f9 pressed) - no caps lock bug!
 - you can have a config file holding all your kvm data and use a menue on start of the tool selecting the desired kvm
 - mouse input can be turned off - if you just work on remote server text console, there is no need to send mouse info
 

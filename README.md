@@ -9,7 +9,9 @@ More problems are
 - no bandwidth control. it is hard to switch the tool to a bandwidth saving mode. no statistics how much bandwidth is used (yes there are people who pay for traffic!)
 - no shortcuts for important keystroke macros such as switching virtual terminals
 - no paste functionality - yes, sometimes you have very complex root passwords you need to apply quickly. sometimes you might also want to copy snippets to your kvm
+- led keys desync - actually caps lock also activates itself from time to time and client can not deactivate them. reboot required to fix this
 - client terminates if network connection drops
+
 
 # motivation
 

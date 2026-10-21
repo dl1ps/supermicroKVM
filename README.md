@@ -43,6 +43,7 @@ The current version implements:
 - bandwidth control - shows statistics bandwidth wich is currently used and counts transferred bytes
 - quality control - it is possible to reduce the bandwith which is necessary for operation to a minimum (unfortunately even if all savings are utilized those old devices are still consuming more than modern protocols would do)
 - descriptive debug messages
+- sync of led keys (server is set to the value of the local keys) - no caps lock bug!
 - you can have a config file holding all your kvm data and use a menue on start of the tool selecting the desired kvm
 - mouse input can be turned off - if you just work on remote server text console, there is no need to send mouse info
 
